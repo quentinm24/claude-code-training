@@ -1,0 +1,82 @@
+[
+  {
+    "id": "REC-001",
+    "name": "Amara Osei",
+    "email": "amara.osei@clientco.com",
+    "status": "active",
+    "score": 82,
+    "submittedAt": "2026-03-14T09:22:00Z"
+  },
+  {
+    "id": "REC-002",
+    "name": "James Whitfield",
+    "email": "j.whitfield@clientco.com",
+    "status": "pending",
+    "score": 74,
+    "submittedAt": "2026-03-15T11:05:00Z"
+  },
+  {
+    "id": "REC-003",
+    "name": "Priya Nair",
+    "email": "priya.nair@clientco.com",
+    "status": "active",
+    "score": 91,
+    "submittedAt": "2026-02-28T08:00:00Z"
+  },
+  {
+    "id": "REC-004",
+    "name": "Marcus Chen",
+    "email": "mchen@clientco.com",
+    "status": "closed",
+    "score": 55,
+    "submittedAt": "2026-01-10T14:30:00Z"
+  },
+  {
+    "id": "REC-005",
+    "name": "Sofia Reyes",
+    "email": "sofia.reyes@clientco.com",
+    "status": "active",
+    "score": 88,
+    "submittedAt": "2026-04-01T10:15:00Z"
+  },
+  {
+    "id": "REC-006",
+    "name": "Tom Hartley",
+    "email": "not-an-email",
+    "status": "active",
+    "score": 67,
+    "submittedAt": "2026-03-20T09:00:00Z"
+  },
+  {
+    "id": "REC-007",
+    "name": "Danielle Okonkwo",
+    "email": "d.okonkwo@clientco.com",
+    "status": "unknown",
+    "score": 79,
+    "submittedAt": "2026-03-22T16:45:00Z"
+  },
+  {
+    "id": "REC-008",
+    "name": "",
+    "email": "noname@clientco.com",
+    "status": "pending",
+    "score": 61,
+    "submittedAt": "2026-03-25T12:00:00Z"
+  },
+  {
+    "id": "REC-009",
+    "name": "Lena Fischer",
+    "email": "lena.fischer@clientco.com",
+    "status": "pending",
+    "score": 105,
+    "submittedAt": "2026-03-18T07:30:00Z"
+  },
+  {
+    "id": "REC-010",
+    "name": "Kwame Asante",
+    "email": "kwame.asante@clientco.com",
+    "status": "closed",
+    "score": 70,
+    "submittedAt": "2026-02-14T15:00:00Z"
+  }
+]

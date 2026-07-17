@@ -1,0 +1,12 @@
+{
+  "name": "intake-validator",
+  "version": "1.0.0",
+  "description": "Validates and summarises client intake records",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js data/sample-records.json",
+    "test": "node --test tests/processor.test.js"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
