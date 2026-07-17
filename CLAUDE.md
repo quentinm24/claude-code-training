@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository structure
 
-This repository contains a single Node.js project, `intake-validator/`, an internal CLI tool for validating and summarizing client intake records. There is no root-level build config — all commands are run from inside `intake-validator/`.
+This repository contains a Node.js project, `intake-validator/`, an internal CLI tool for validating and summarizing client intake records. There is no root-level build config for it — all commands are run from inside `intake-validator/`.
+
+It also contains `calculator.py` at the repo root — a standalone Python module unrelated to `intake-validator`.
 
 ## Commands
 
@@ -31,6 +33,10 @@ The tool is a straight pipeline, wired together in `index.js`:
 3. `src/reporter.js` — `formatReport(summary, invalid)` turns the `summarise()` output and the invalid-record list into the human-readable report string printed to stdout.
 
 Data flows one way: `index.js` → `validateRecords` → `summarise` (on the valid subset) → `formatReport` → `console.log`. When changing the shape of a record or the summary object, all three files in `src/` plus `tests/processor.test.js` need to stay in sync.
+
+## calculator.py
+
+A standalone Python module at the repo root, separate from `intake-validator/`. Provides basic arithmetic functions: `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, and `divide(a, b)` (raises `ValueError` on division by zero). No test file, `requirements.txt`, or other Python project config exists for it yet.
 
 ## Git workflow
 
