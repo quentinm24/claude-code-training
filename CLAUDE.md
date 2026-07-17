@@ -36,7 +36,9 @@ Data flows one way: `index.js` → `validateRecords` → `summarise` (on the val
 
 ## calculator.py
 
-A standalone Python module at the repo root, separate from `intake-validator/`. Provides basic arithmetic functions: `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, and `divide(a, b)` (raises `ValueError` on division by zero). No test file, `requirements.txt`, or other Python project config exists for it yet.
+A standalone Python module at the repo root, separate from `intake-validator/`. Provides basic arithmetic functions: `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, and `divide(a, b)` (raises `ValueError` on division by zero). Tested by `test_calculator.py` (pytest) in the same directory; run with `pytest test_calculator.py -v`. No `requirements.txt` or other Python project config exists for it.
+
+`divide()` previously had a bug: it used floor division (`//`) instead of true division (`/`), so non-exact divisions silently returned a truncated integer result instead of raising an error (e.g. `divide(7, 2)` returned `3` instead of `3.5`). Fixed by changing `//` to `/`; all 27 tests in `test_calculator.py` now pass.
 
 ## Git workflow
 
