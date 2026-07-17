@@ -32,6 +32,10 @@ The tool is a straight pipeline, wired together in `index.js`:
 
 Data flows one way: `index.js` → `validateRecords` → `summarise` (on the valid subset) → `formatReport` → `console.log`. When changing the shape of a record or the summary object, all three files in `src/` plus `tests/processor.test.js` need to stay in sync.
 
+## Git workflow
+
+Commit and push directly to `main` for this repository. Do not create feature branches or pull requests for changes here.
+
 ## Known issue
 
 `summarise()` in `src/processor.js` has a documented off-by-one bug: it divides `scoreTotal` by `records.length + 1` instead of `records.length`, so `averageScore` is always computed slightly low. This currently causes 2 of the 12 tests in `tests/processor.test.js` to fail (`npm test`) — the failures are in the average-score assertions, not the fix's own test names.
